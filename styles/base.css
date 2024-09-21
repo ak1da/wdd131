@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: blue;
+    padding: 10px;
+}
+.headerContent h1 {
+    text-align: center;
+    color: white;
+}
+.mainWrap {
+    display: flex;
+    margin: 20px;
+    
+}
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #3f3f3f;
+    width: 100%;
+}
+.subHeadContent a {
+    color: white;
+    text-decoration: none;
+}
+.subHeadContent a:visited {
+    color: white;
+    text-decoration: none;
+}
+.subHeadContent {
+    padding: 14px 0px;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+.aboutContent {
+    width: 65%;
+    /* margin: 20px 0px 0px 40px; */
+    /* border: 1px solid #777777; */
+}
+.aboutHeader {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.aboutHeader h2 {
+    margin: 0;
+}
+.aboutlocwri {
+    border: 2px solid #929292;
+}
+/* .aboutlocwri img {
+    width: 180px;    
+} */
+.aboutWrit {
+    display: flex;
+    padding: 20px;
+}
+.aboutWrit img {
+    width: 180px;    
+}
+.aboutWrit p {
+    padding: 10px;
+}
+.location {
+    text-align: center;
+}
+.aboutLoca {
+    display: flex;
+    padding: 20px;
+}
+.aboutLoca img {
+    width: 180px;    
+}
+.aboutLoca p {
+    padding: 10px;
+}
+.webDev {
+    width: 35%;
+    /* margin: 20px 0px 10px 10px; */
+    border: 2px solid #929292;
+    margin: 0px 0px 0px 20px;
+}
+.devlink {
+    display: flex;
+    justify-content: center;
+}
+.linkwrap {
+    margin-top: 100px;
+
+}
+.footerContent {
+    background-color: blue;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
