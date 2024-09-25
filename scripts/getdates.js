@@ -3,7 +3,7 @@ let short = document.querySelector("#short");
 
 
 
-const today = new Date();
+let today = new Date();
 
 short.innerHTML = ` <span class="highlight">${new Intl.DateTimeFormat(
 	"en-US",
