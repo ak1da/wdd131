@@ -117,6 +117,9 @@ a {
     color: rgb(148, 39, 39);
     text-decoration: none;
 }
+a:hover {
+    color: white;
+}
 
 a:visited {
     color: white;
