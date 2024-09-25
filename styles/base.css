@@ -117,14 +117,14 @@ a {
     color: rgb(148, 39, 39);
     text-decoration: none;
 }
-a:hover {
+/* a:hover {
     color: white;
-}
+} */
 
-a:visited {
+/* a:visited {
     color: white;
     text-decoration: none;
-}
+} */
 
 .subHeadContent a:visited {
     color: white;
