@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #aea9a9;
 }
 main {
     max-width: 100%;
@@ -29,7 +30,7 @@ main {
     text-decoration: none;
 }
 a {
-    color: white;
+    color: rgb(148, 39, 39);
     text-decoration: none; 
 }
 a:visited {
@@ -73,7 +74,9 @@ a:visited {
     padding: 20px;
 }
 .aboutWrit img {
-    width: 180px;    
+    width: 180px;
+    height: 170px;
+        
 }
 .aboutWrit p {
     padding: 10px;
@@ -86,7 +89,9 @@ a:visited {
     padding: 20px;
 }
 .aboutLoca img {
-    width: 180px;    
+    width: 180px;
+    height: 150px;
+    margin-top: 27px;  
 }
 .aboutLoca p {
     padding: 10px;
