@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Nigeria</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Nigeria</h1>
+</header>
+
+<main>
+ 
+  <section class="hero">
+    <picture>
+      <source srcset="images/lagos-large.webp" media="(min-width: 700px)">
+      <img src="images/lagos-small.webp" alt="Lagos-skyline-and-oceanview">
+    </picture>
+  </section>
+
+  
+  <section class="data">
+    <h2>Data</h2>
+    <ul>
+      <li><strong>Country:</strong> Nigeria 🇳🇬</li>
+      <li><strong>Population:</strong> ~236.75 million</li>
+      <li><strong>Area:</strong> 923,768 sq m</li>
+      <li><strong>Capital:</strong> Abuja</li>
+      <li><strong>Language:</strong>English</li>
+      <li><strong>Time Zone:</strong>UTC+1</li>
+      <li><strong>Calling Code:</strong>+234</li>
+      <li><strong>Known for:</strong> Beaches, culture, commerce, nightlife</li>
+    </ul>
+  </section>
+
+  <section class="weather">
+    <h2>Weather <span class="wide-icon"></span></h2>
+
+    <div class="weather-box">
+      <img class="weather-icon-mobile" src="images/weather.svg" alt="Partly cloudy icon">
+
+      <p><strong>Conditions:</strong> Partly Cloudy</p>
+      <p><strong>Temperature:</strong> <span id="temp">27</span> °C</p>
+      <p><strong>Wind Speed:</strong> <span id="wind">13</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+  <p>&copy; <span id="currentyear"></span>🌸 Akanimo Jackson 🌸 Nigeria</p>
+  <p>Last Modified: <span id="lastmodified"></span></p>
+</footer>
+
+</body>
+</html>
