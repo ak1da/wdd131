@@ -28,6 +28,7 @@ p, li {
     width: 300px;
     height: 300px;
     display: block;
+    border: #364274;
     margin-top: 10px;
 }
 
@@ -49,5 +50,5 @@ p, li {
 }
 
 .color-sample.secondary {
-    color: #F0F0F0;
+    color: #364274;
 }
