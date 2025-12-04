@@ -1,0 +1,52 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+    color: #333333;
+    margin: 20px;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #4CAF50;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+
+.section {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin-top: 10px;
+}
+
+.wireframe {
+    border: 2px dashed #333333;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    background-color: #ffffff;
+}
+
+
+.color-sample {
+    font-weight: bold;
+}
+
+.color-sample.primary {
+    color: #4CAF50;
+}
+
+.color-sample.secondary {
+    color: #F0F0F0;
+}
