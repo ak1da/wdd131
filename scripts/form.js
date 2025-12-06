@@ -1,4 +1,4 @@
-// PRODUCT ARRAY PROVIDED
+
 const products = [
   { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
   { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -7,7 +7,6 @@ const products = [
   { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
-// POPULATE SELECT MENU
 const productSelect = document.querySelector("#product");
 
 products.forEach((product) => {
@@ -17,7 +16,6 @@ products.forEach((product) => {
   productSelect.appendChild(option);
 });
 
-// FOOTER JS
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent =
   "Last Modified: " + document.lastModified;

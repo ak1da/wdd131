@@ -17,13 +17,11 @@
   <main>
     <form method="get" action="review.html">
 
-      <!-- PRODUCT NAME -->
       <label for="product">Product Name <span class="required">*</span></label>
       <select id="product" name="product" required>
         <option value="" disabled selected>Select a Product ...</option>
       </select>
 
-      <!-- RATING -->
       <fieldset>
         <legend>Overall Rating <span class="required">*</span></legend>
 
@@ -43,11 +41,9 @@
         <label for="rating5">★★★★★</label>
       </fieldset>
 
-      <!-- INSTALLATION DATE -->
       <label for="installDate">Date Installed <span class="required">*</span></label>
       <input type="date" id="installDate" name="installDate" required>
 
-      <!-- USEFUL FEATURES -->
       <fieldset>
         <legend>Useful Features (check all that apply)</legend>
 
@@ -64,16 +60,13 @@
         <label for="feature4">Performance</label>
       </fieldset>
 
-      <!-- WRITTEN REVIEW -->
       <label for="review">Written Review</label>
       <textarea id="review" name="review" rows="5" placeholder="Write your review (optional)..."></textarea>
 
-      <!-- USER NAME -->
       <label for="userName">Your Name (optional)</label>
       <input type="text" id="userName" name="userName" placeholder="Enter your name">
 
-      <!-- SUBMIT -->
-      <input type="submit" value="Submit Review">
+      <input type="Post" value="Post Review">
 
     </form>
   </main>
@@ -83,7 +76,7 @@
   </footer>
 
   <script>
-    // PRODUCT ARRAY
+
     const products = [
       { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
       { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -92,7 +85,6 @@
       { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
     ];
 
-    // POPULATE SELECT MENU
     const productSelect = document.querySelector("#product");
     products.forEach((product) => {
       const option = document.createElement("option");
@@ -101,7 +93,7 @@
       productSelect.appendChild(option);
     });
 
-    // FOOTER JS
+
     document.querySelector("#year").textContent = new Date().getFullYear();
     document.querySelector("#lastModified").textContent = "Last Modified: " + document.lastModified;
   </script>
