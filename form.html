@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-Us">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Submit a product review including rating, installation date, useful features, and written feedback. Keep track of your reviews with our confirmation page.">
-  <meta name="author" content="Akanimo Jackson">
+  <meta name="description" content="Product review form for users to submit ratings, features, and feedback on products.">
   <title>Product Review Form</title>
   <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/form.js" defer></script>
@@ -17,78 +16,95 @@
 
   <main>
     <form method="get" action="review.html">
-      
+
+      <!-- PRODUCT NAME -->
       <label for="product">Product Name <span class="required">*</span></label>
       <select id="product" name="product" required>
         <option value="" disabled selected>Select a Product ...</option>
       </select>
 
+      <!-- RATING -->
       <fieldset>
         <legend>Overall Rating <span class="required">*</span></legend>
 
-        <label>
-          <input type="radio" name="rating" value="1" required>
-          ★☆☆☆☆
-        </label>
+        <input type="radio" id="rating1" name="rating" value="1" required>
+        <label for="rating1">★☆☆☆☆</label>
 
-        <label>
-          <input type="radio" name="rating" value="2">
-          ★★☆☆☆
-        </label>
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label for="rating2">★★☆☆☆</label>
 
-        <label>
-          <input type="radio" name="rating" value="3">
-          ★★★☆☆
-        </label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating3">★★★☆☆</label>
 
-        <label>
-          <input type="radio" name="rating" value="4">
-          ★★★★☆
-        </label>
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label for="rating4">★★★★☆</label>
 
-        <label>
-          <input type="radio" name="rating" value="5">
-          ★★★★★
-        </label>
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label for="rating5">★★★★★</label>
       </fieldset>
 
+      <!-- INSTALLATION DATE -->
       <label for="installDate">Date Installed <span class="required">*</span></label>
       <input type="date" id="installDate" name="installDate" required>
 
+      <!-- USEFUL FEATURES -->
       <fieldset>
         <legend>Useful Features (check all that apply)</legend>
 
-        <label>
-          <input type="checkbox" id="feature1" name="features" value="Ease of Use"> Ease of Use
-        </label>
+        <input type="checkbox" id="feature1" name="features" value="Ease of Use">
+        <label for="feature1">Ease of Use</label>
 
-        <label>
-          <input type="checkbox" id="feature2" name="features" value="Durability"> Durability
-        </label>
+        <input type="checkbox" id="feature2" name="features" value="Durability">
+        <label for="feature2">Durability</label>
 
-        <label>
-          <input type="checkbox" id="feature3" name="features" value="Design"> Design
-        </label>
+        <input type="checkbox" id="feature3" name="features" value="Design">
+        <label for="feature3">Design</label>
 
-        <label>
-          <input type="checkbox" id="feature4" name="features" value="Performance"> Performance
-        </label>
+        <input type="checkbox" id="feature4" name="features" value="Performance">
+        <label for="feature4">Performance</label>
       </fieldset>
 
+      <!-- WRITTEN REVIEW -->
       <label for="review">Written Review</label>
       <textarea id="review" name="review" rows="5" placeholder="Write your review (optional)..."></textarea>
 
+      <!-- USER NAME -->
       <label for="userName">Your Name (optional)</label>
       <input type="text" id="userName" name="userName" placeholder="Enter your name">
 
+      <!-- SUBMIT -->
       <input type="submit" value="Submit Review">
-      
+
     </form>
   </main>
 
   <footer>
     <p>&copy; <span id="year"></span> | <span id="lastModified"></span> | Akanimo Jackson</p>
   </footer>
+
+  <script>
+    // PRODUCT ARRAY
+    const products = [
+      { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
+      { id: "fc-2050", name: "power laces", averagerating: 4.7 },
+      { id: "fs-1987", name: "time circuits", averagerating: 3.5 },
+      { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
+      { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
+    ];
+
+    // POPULATE SELECT MENU
+    const productSelect = document.querySelector("#product");
+    products.forEach((product) => {
+      const option = document.createElement("option");
+      option.value = product.id;
+      option.textContent = product.name;
+      productSelect.appendChild(option);
+    });
+
+    // FOOTER JS
+    document.querySelector("#year").textContent = new Date().getFullYear();
+    document.querySelector("#lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
 
 </body>
 </html>
