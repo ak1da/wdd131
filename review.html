@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer>
+
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+
+    window.onload = () => {
+      document.querySelector("#counter").textContent = count;
+    };
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Review Submitted</h1>
+  </header>
+
+  <main>
+    <p>Thank you! Your review has been successfully submitted.</p>
+    <p>You have submitted <strong><span id="counter"></span></strong> reviews.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | <span id="lastModified"></span> | Akanimo Jackson</p>
+  </footer>
+
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+    document.querySelector("#lastModified").textContent =
+      "Last Modified: " + document.lastModified;
+  </script>
+
+</body>
+</html>
