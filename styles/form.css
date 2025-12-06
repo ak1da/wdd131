@@ -1,4 +1,4 @@
-/* GENERAL STYLES */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -27,7 +27,6 @@ h1 {
   margin: 0;
 }
 
-/* FORM ELEMENTS */
 form {
   display: flex;
   flex-direction: column;
@@ -63,7 +62,7 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
