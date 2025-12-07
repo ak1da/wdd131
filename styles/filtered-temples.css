@@ -11,6 +11,21 @@ padding: 1rem;
 text-align: center;
 }
 
+
+nav a {
+  background: #0059b3;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background: #003d80;
+}
+
 nav {
 margin-top: 1rem;
 display: flex;
