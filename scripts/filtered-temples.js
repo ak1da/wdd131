@@ -75,8 +75,7 @@ templeName: "Durban South Africa Temple",
 location: "Durban, South Africa",
 dedicated: "2020, February, 16",
 area: 19800,
-// imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/durban-south-africa-temple.jpeg"
-imageUrl: "https://churchofjesuschristtemples.org/paris-france-temple/photographs/#Gallery-3"
+imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/durban-south-africa-temple.jpeg"
 }
 ];
 
